@@ -6,7 +6,7 @@ class Food(Turtle):  # inherit Turtle class
 
   def __init__(self):
     super().__init__()  # initialization of constuctor of Turtle class
-    self.shape("turtle")
+    self.shape("circle")
     self.penup()
     self.shapesize(stretch_len=0.5, stretch_wid=0.5)
     self.color("blue")
