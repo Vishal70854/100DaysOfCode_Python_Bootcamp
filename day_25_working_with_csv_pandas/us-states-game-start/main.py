@@ -20,10 +20,9 @@ while len(guessed_states) < 50:
                                     prompt="What's another state name?").title()
 
     if answer_state == "Exit":
-        remaining_states = []   # get all remaining states not typed by user
-        for state_name in all_states:
-            if state_name not in guessed_states:
-                remaining_states.append(state_name)
+        # get all remaining states not typed by user
+        remaining_states = [state_name for state_name in all_states if state_name not in guessed_states]   
+        
         print(remaining_states)
                 
         state_dict = {"states": remaining_states}   # create a dictionary with column name states

@@ -1,4 +1,4 @@
-'''
+
 # with open("./weather_data.csv") as data_file:
 #     data = data_file.readlines()
 #     print(data)
@@ -6,14 +6,14 @@
 # import csv # for reading csv files
 # with open("./weather_data.csv") as data_file:
 #     data = csv.reader(data_file)
-#     # print(data)
+#     print(data)
 #     temperatures = []
 #     for row in data:
 #         if row[1] != "temp":
 #             temperatures.append(int(row[1]))
 #     print(temperatures)
 
-
+'''
 # to work with csv, excel files pandas will be the best
 import pandas
 
@@ -65,6 +65,6 @@ data_dict = {
     "count" : [color_list.count("Gray"), color_list.count("Cinnamon"), color_list.count("Black")]
     }
 
-squirrel_count = pandas.DataFrame(data_dict)
+squirrel_count = pandas.DataFrame(data_dict)    # create a table in python pandas
 print(squirrel_count)
 squirrel_count.to_csv("squirrel_count.csv")
